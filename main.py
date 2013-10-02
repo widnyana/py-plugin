@@ -5,6 +5,7 @@
     Demo of simple python plugin system
 '''
 
+import sys
 from ploader import PluginLoader
 
 if __name__ == '__main__':

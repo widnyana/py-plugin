@@ -7,6 +7,7 @@
 '''
 
 import os
+import sys
 import imp
 
 PluginFolder = "./plugins"
@@ -23,6 +24,7 @@ class PluginLoader():
         possibleplugins = os.listdir(PluginFolder)
         for i in possibleplugins:
             location = os.path.join(PluginFolder, i)
+            sys.path.append(location)
             if not os.path.isdir(location) or not i + ".py" in os.listdir(location):
                 continue
             info = imp.find_module(i, [location])
