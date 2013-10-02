@@ -11,7 +11,7 @@ Setiap plugin harus memiliki fungsi __run()__, karena fungsi ini yang akan di ek
 
 To Do
 -----
-- support supaya plugin bisa import library dan mengeksekusi method yang tersedia
+- support supaya plugin bisa import library dan mengeksekusi method yang tersedia [status: __fixed__]
 - etc, nyusul pelan pelan :p
 
 License
